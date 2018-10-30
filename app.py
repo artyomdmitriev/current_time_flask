@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return time.asctime(time.localtime(time.time()))
+    return "Time is: " + time.asctime(time.localtime(time.time()))
 
 
 if __name__ == '__main__':
