@@ -1,0 +1,2 @@
+[flake8]
+exclude = .git,venv,.circleci,Procfile,requirements.txt,.gitignore
