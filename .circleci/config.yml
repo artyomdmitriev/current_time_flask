@@ -4,19 +4,11 @@ workflows:
   test:
     jobs:
       - test-flake8
-      - test-pycodestyle
 jobs:
   test-flake8:
     docker:
-      - image: circleci/python:3.6
+      - image: circleci/python:3.7.1
     steps:
       - checkout
-      - run: sudo pip install tox
-      - run: tox -eflake8
-  test-pycodestyle:
-    docker:
-      - image: circleci/python:3.6
-    steps:
-      - checkout
-      - run: sudo pip install tox
-      - run: tox -epycodestyle
+      - run: sudo pip install flake8
+      - run: flake8
