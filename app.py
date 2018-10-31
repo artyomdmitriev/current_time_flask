@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/author')
 def author():
-    return "Author's name is Artsemi Dzmitryieu"
+    return "Author's name is Artsemi Dzmitryieu."
 
 
 if __name__ == '__main__':
