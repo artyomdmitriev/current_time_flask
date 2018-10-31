@@ -13,5 +13,10 @@ def author():
     return "Author's name is Artsemi Dzmitryieu."
 
 
+@app.route('/purpose')
+def purpose():
+    return "<b>This project was created for education.</b>"
+
+
 if __name__ == '__main__':
     app.run()
