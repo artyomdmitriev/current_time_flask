@@ -15,11 +15,7 @@ def author():
 
 @app.route('/purpose')
 def purpose():
-  return "<b>This project was created for education.</b>"
-
-
-
-
+    return "<b>This project was created for education.</b>"
 
 
 if __name__ == '__main__':
